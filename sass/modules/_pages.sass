@@ -20,11 +20,35 @@
       @include input
 
 .btn
-  @include btn-rounded ($text-color-light, $btn-main-color, $text-color-light, $btn-hover-color)
+  @include btn-rounded ($text-color-light, $color-ball, $text-color-light, darken($color-ball, 20%))
 
-  &:hover + .ball
-    transform: scale(1.5)
+  &:active + .ball
+    background-color: darken($color-ball, 20%)
+    border-radius: 50%
+    transform: scale(0.7) translate(100%)
   
 
 .ball
   @include ball
+
+.btn
+  &:active
+    & + .progress
+      & > .progress__bar
+        transform: scaleX(1)
+
+.progress 
+  width: 100%
+  height: 3rem
+  padding: 0.3rem
+  border: 2px solid $btn-main-color
+  margin: 2rem 0
+
+  &__bar 
+    height: 100%
+    width: 100%
+    background-color: $color-ball
+    transform: scaleX(0)
+    transition: transform 2s cubic-bezier(.32,0,.07,1)
+    transform-origin: left
+    
