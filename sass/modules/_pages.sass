@@ -1,0 +1,30 @@
+.container
+  @include flex-center
+  margin-bottom: 1rem
+  
+.btn-zoom
+  @include btn-rounded ($text-color-light, $btn-main-color, $text-color-light, $btn-hover-color)
+
+  &:hover
+    transform: scale(1.1)
+
+.btn-dezoom
+  @include btn-rounded ($text-color-light, $btn-main-color, $text-color-light, $btn-hover-color)
+
+  &:hover
+    transform: scale(0.9)
+
+.form
+  &__group
+    input
+      @include input
+
+.btn
+  @include btn-rounded ($text-color-light, $btn-main-color, $text-color-light, $btn-hover-color)
+
+  &:hover + .ball
+    transform: scale(1.5)
+  
+
+.ball
+  @include ball

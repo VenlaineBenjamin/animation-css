@@ -1,0 +1,88 @@
+// reset.sass
+
+// Reset général
+*, *::before, *::after
+  margin: 0
+  padding: 0
+  box-sizing: border-box
+
+// Réinitialisation des styles de liste
+ul, ol
+  list-style: none
+
+// Réinitialisation des styles de lien
+a
+  text-decoration: none
+  color: inherit
+
+// Réinitialisation des styles de bouton
+button, input[type="button"], input[type="submit"]
+  border: none
+  background: none
+  cursor: pointer
+
+// Réinitialisation des styles de formulaire
+input, textarea, select
+  appearance: none
+  border: none
+  outline: none
+  font-family: inherit
+
+// Réinitialisation des styles de tableau
+table
+  border-collapse: collapse
+  width: 100%
+
+// Réinitialisation des styles de champ de formulaire
+input[type="text"], input[type="email"], input[type="password"], input[type="number"], input[type="tel"], input[type="url"], textarea
+  width: 100%
+  padding: 0.5rem
+  border: 1px solid #ccc
+  border-radius: 4px
+  font-size: 1rem
+  line-height: 1.5
+
+// Réinitialisation des styles de bouton
+button
+  padding: 0.5rem 1rem
+  background-color: #0074d9
+  color: #fff
+  border-radius: 4px
+  font-size: 1rem
+  transition: background-color 0.3s ease
+
+  &:hover
+    background-color: #0056b3
+
+// Réinitialisation des styles de paragraphe
+p
+  line-height: 1.5
+
+// Réinitialisation des styles d'image
+img
+  max-width: 100%
+  height: auto
+
+// Réinitialisation des styles de section
+section
+  display: block
+
+// Réinitialisation des styles de conteneur
+.container
+  max-width: 1200px
+  margin: 0 auto
+  padding: 0 1rem
+
+// Réinitialisation des styles de grille
+.row
+  display: flex
+  flex-wrap: wrap
+
+.column
+  flex: 1
+  padding: 1rem
+
+// Réinitialisation des styles de média
+@media screen and (max-width: 768px)
+  .column
+    flex: 100%
