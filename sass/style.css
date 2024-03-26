@@ -21,7 +21,9 @@ button, input[type=button], input[type=submit] {
 }
 
 input, textarea, select {
-  appearance: none;
+  -webkit-appearance: none;
+     -moz-appearance: none;
+          appearance: none;
   border: none;
   outline: none;
   font-family: inherit;
@@ -305,6 +307,4 @@ label {
   justify-content: center;
   align-items: center;
   background: #59CD90;
-}
-
-/*# sourceMappingURL=style.css.map */
+}/*# sourceMappingURL=style.css.map */
